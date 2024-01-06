@@ -11,12 +11,6 @@
 // Invalid instruction is UB
 
 namespace hack {
-    //class Code {
-    //    public:
-    //    static std::string code(std::unique_ptr<InstructionA> in);
-    //    static std::string code(std::unique_ptr<InstructionC> in);
-    //};
-
     class CodeInstructionA: public CodeStrategy {
         public: 
             std::string convert(const Instruction& in);

@@ -24,6 +24,7 @@ add_executable(HackAssembler
     hack_parser.cpp
     hack_instruction.cpp
     hack_code.cpp
+    hack_symboltable.cpp
 )
 
 add_dependencies(HackAssembler DownloadExternalProject)

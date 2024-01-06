@@ -6,6 +6,9 @@
 #include <hack_code.h>
 #include <memory>
 
+// Parser
+// Parser class is responsible to open and iterate the file
+
 namespace hack {
 
 class Parser {

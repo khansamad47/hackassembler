@@ -95,45 +95,4 @@ std::string CodeInstructionC::convert(const Instruction& in)
     return ss.str();
 }
 
-//std::string Code::code(std::unique_ptr<InstructionA> instruction)
-//{
-//    std::string result = std::bitset<16>(instruction.value()).to_string();
-//    result[0] = '0';
-//    return result;
-//}
-
-//std::string Code::code(std::unique_ptr<InstructionC> instruction)
-//{
-//    std::stringstream ss;
-//    ss << "111";
-//    // Computation
-//    std::string compution = instruction.computation();
-//    size_t hasM = compution.find("M");
-//    ss << ((hasM != std::string::npos) ? "1" : "0"); 
-//    std::replace(compution.begin(), compution.end(), 'A', 'X');
-//    std::replace(compution.begin(), compution.end(), 'M', 'X');
-//    ss << std::bitset<6>(CODE_COMPUTATION[compution]).to_string();
-//
-//    // Destination
-//    if(!instruction.destination())
-//    {
-//        ss << std::bitset<3>(Specification::C_INSTRUCTION_DESTINATION::D_NULL).to_string();
-//    }
-//    else {
-//        std::string destination = instruction.destination().value();
-//        ss << std::bitset<3>(CODE_DESTINATION[destination]).to_string();
-//    }
-//
-//    // Jump
-//    if(!instruction.jump())
-//    {
-//        ss << std::bitset<3>(Specification::C_INSTRUCTION_JUMP::J_NULL).to_string();
-//    }
-//    else {
-//        std::string jump = instruction.jump().value();
-//        ss << std::bitset<3>(CODE_JUMP[jump]).to_string();
-//    }
-//    return ss.str();
-//}
-
 }
